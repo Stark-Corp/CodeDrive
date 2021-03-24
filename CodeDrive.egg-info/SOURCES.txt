@@ -1,8 +1,0 @@
-README.md
-setup.py
-CodeDrive.egg-info/PKG-INFO
-CodeDrive.egg-info/SOURCES.txt
-CodeDrive.egg-info/dependency_links.txt
-CodeDrive.egg-info/top_level.txt
-main/CodeDrive.py
-main/__init__.py
