@@ -18,10 +18,9 @@ setup(name = "CodeDrive",
     keywords = ['python', 'school level programs'],
     classifiers = [
         "Development Status :: 1 - Planning",
-        "Intended Audience :: Developers",
+        "Intended Audience :: Students/Programmers",
         "Programming Language :: Python :: 3",
-        "Operating System :: Microsoft :: Windows",
-        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: OS Independent", 
     ],
-    python_requires = ">=3.6"
+    python_requires = ">=3.0"
 )
