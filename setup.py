@@ -2,10 +2,11 @@ from setuptools import setup, find_packages
 
 desc = "This package contains codes/functions that are useful in school level python programming"
 
-longDesc = "You can use this module for executing the school level programming tasks like Palindrome tests, Armstrong number tests, etc. All the things are included in this python package and will be updated more in future."
+with open("README.md", "r") as rd:
+    longDesc = rd.read()
 
 setup(name = "CodeDrive",
-    version = "1.1",
+    version = "1.2",
     author = "Stark-Corp (Himangshu De)",
     author_email = "dehimangshu2020@gmail.com",
     url = "https://github.com/Stark-Corp/CodeDrive",
