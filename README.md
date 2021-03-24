@@ -2,12 +2,14 @@
 
 This is a **Python Library** contains some basic programs given in schools for assessments.
 
-It has only one **Class**: **functions**
+It has only one **Class**: **Functions**
 
 ```
 Example of how to use this module:
 
-from CodeDrive import functions as fn
+from CodeDrive import Functions as fn
+#or the alternative way
+import CodeDrive.Functions as cf
 
 #Now you want to run a palindrome test, so you need to do:
 
