@@ -1,4 +1,4 @@
-Metadata-Version: 1.2
+Metadata-Version: 2.1
 Name: CodeDrive
 Version: 1.2
 Summary: This package contains codes/functions that are useful in school level python programming
@@ -41,3 +41,4 @@ Classifier: Programming Language :: Python :: 3
 Classifier: Operating System :: Microsoft :: Windows
 Classifier: Operating System :: MacOS :: MacOS X
 Requires-Python: >=3.6
+Description-Content-Type: text/markdown
