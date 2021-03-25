@@ -4,7 +4,9 @@ This is a **Python Library** contains some basic programs given in schools for a
 
 It has only one **Class**: **Functions**
 
+
 ```
+
 Example of how to use this module:
 
 from CodeDrive import Functions as fn
@@ -23,4 +25,16 @@ else:
     print(f"{user} is not a palindrome number")
 
 
+```
+
+To **upgrade** to the latest version, use:
+
+```
+pip install --upgrade CodeDrive
+```
+
+or 
+
+```
+python -m pip install --upgrade CodeDrive
 ```

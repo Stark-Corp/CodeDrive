@@ -1,4 +1,4 @@
-
+from typing import AnyStr
 
 def armstrong(x: int) -> bool:
     """
@@ -27,7 +27,7 @@ def armstrong(x: int) -> bool:
         return True
 
 
-def largeSmall(x: list) -> None:
+def listComparison(x: list) -> None:
     '''
     Gives `Largest` and `Smallest` number from the list specified by user.
     And prints the largest and smallest number from the user-given list.
@@ -131,9 +131,114 @@ def factorial(x: int)-> int:
     return fact
 
 
+def quadEquationSqrt(a: int=1, b: int=2, c: int=3) -> None:
+    """
+    This function prints the `roots` of a `Quadratic Equation` whose `Coefficient` is specified by the `User`. Returns `None` if bound to a variable.
+
+    Args: This function takes three arguments in total.
+
+    `a: int` :The literal of this argument should be of integer data
+
+    `b: int` :The literal of this argument should be of integer data
+
+    `c: int` :The literal of this argument should be of integer data
+    """
+    
+    equation = f"{a}x² + {b}x + {c}"
+    print(f"User-given equation is:\n{equation}")
+
+    discriminant = pow(b,2) - (4*a*c)
+
+    root1 = (-b - pow(discriminant,0.5))/(2*a)
+    root2 = (-b + pow(discriminant,0.5))/(2*a)
+
+    if root1 == -(root2):
+        print(f"The roots of '{equation}' is: ±{root2}")
+    else:
+        print(f"The roots of '{equation}' are: {root1} and {root2}")
+
+    return None
+    
+
+def leapYear(year: int = 2020)-> None:
+    """
+    This function tests and `prints` whether a given year is a `Leap year` or not. Returns `None` if bound to a variable.
+
+    Args: This function takes exactly one argument.
+
+    `year: int` : The literal of this argument should be of `integer (int)` data type.
+    """
+    
+    if year % 4 == 0:
+        if year%100 == 0:
+            if year %400 == 0:
+                print(f"{year} is a leap year")
+            else:
+                print(f"{year} is not a leap year")
+        else:
+            print(f"{year} is a leap year")
+    else:
+        print(f"{year} is not a leap year")
+
+    return None
 
 
+def triangleDeterminer(sideA: float, sideB: float, sideC: float) -> AnyStr:
+    """
+    This function returns the name of the triangle using the above arguments given by the user.
 
+    Args: This function takes three arguments. 
 
+    `sideA: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    
+    `sideB: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
 
+    `sideC: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    """
+
+    name = ""
+    if sideA == sideB == sideC:
+        name = "Equilateral"
+    
+    if sideA == sideB != sideC:
+        name = "Isosceles"
+    
+    if sideA != sideB != sideC:
+        name = "Scalene"
+
+    return name
+    
+
+def threeNumComparison(a: float, b: float, c: float) -> list:
+    """
+    This function returns the list containing smallest and largest number respectively using the above arguments given by the user.
+
+    Args: This function takes three arguments. 
+
+    `a: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    
+    `b: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+
+    `c: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    """
+    smallest = 0
+    largest = 0
+    if a > b and a > c:
+        largest = a
+        if b > c:
+            smallest = c
+        else:
+            smallest = b
+
+    elif b > a and b > c:
+        largest = b
+        if c > a:
+            smallest = a
+        else:
+            smallest = c
+
+    else:
+        largest = c
+
+    return list([smallest, largest])
 

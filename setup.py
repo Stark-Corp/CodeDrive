@@ -6,7 +6,7 @@ with open("README.md", "r") as rd:
     longDesc = rd.read()
 
 setup(name = "CodeDrive",
-    version = "1.2",
+    version = "1.5",
     author = "Stark-Corp (Himangshu De)",
     author_email = "dehimangshu2020@gmail.com",
     url = "https://github.com/Stark-Corp/CodeDrive",
@@ -15,10 +15,11 @@ setup(name = "CodeDrive",
     long_description_content_type = "text/markdown",
     packages = find_packages(),
     install_requires = [],
-    keywords = ['python', 'school level programs'],
+    keywords = ['python', 'school level programs', 'beginners'],
     classifiers = [
         "Development Status :: 1 - Planning",
-        "Intended Audience :: Students/Programmers",
+        "Intended Audience :: Education",
+        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent", 
     ],

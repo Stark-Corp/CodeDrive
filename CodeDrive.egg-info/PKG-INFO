@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: CodeDrive
-Version: 1.2
+Version: 1.5
 Summary: This package contains codes/functions that are useful in school level python programming
 Home-page: https://github.com/Stark-Corp/CodeDrive
 Author: Stark-Corp (Himangshu De)
@@ -12,7 +12,9 @@ Description: # CodeDrive
         
         It has only one **Class**: **Functions**
         
+        
         ```
+        
         Example of how to use this module:
         
         from CodeDrive import Functions as fn
@@ -33,12 +35,24 @@ Description: # CodeDrive
         
         ```
         
-Keywords: python,school level programs
+        To **upgrade** to the latest version, use:
+        
+        ```
+        pip install --upgrade CodeDrive
+        ```
+        
+        or 
+        
+        ```
+        python -m pip install --upgrade CodeDrive
+        ```
+        
+Keywords: python,school level programs,beginners
 Platform: UNKNOWN
 Classifier: Development Status :: 1 - Planning
-Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python :: 3
-Classifier: Operating System :: Microsoft :: Windows
-Classifier: Operating System :: MacOS :: MacOS X
-Requires-Python: >=3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
 Description-Content-Type: text/markdown
