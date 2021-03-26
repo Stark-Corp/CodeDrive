@@ -183,27 +183,27 @@ def leapYear(year: int = 2020)-> None:
     return None
 
 
-def triangleDeterminer(sideA: float, sideB: float, sideC: float) -> AnyStr:
+def triangleDeterminer(m1: float, m2: float, m3: float) -> AnyStr:
     """
     This function returns the name of the triangle using the above arguments given by the user.
 
     Args: This function takes three arguments. 
 
-    `sideA: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    `m1: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
     
-    `sideB: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    `m2: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
 
-    `sideC: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
+    `m3: float` : This argument accepts both `int(1 -> 1.0)` and `float(1.2 -> 1.2)` data types.
     """
 
     name = ""
-    if sideA == sideB == sideC:
+    if m1 == m2 == m3:
         name = "Equilateral"
     
-    if sideA == sideB != sideC:
+    if m1 == m2 != m3 or m1 != m2 == m3 or m1 == m3 != m2:
         name = "Isosceles"
     
-    if sideA != sideB != sideC:
+    if m1 != m2 != m3:
         name = "Scalene"
 
     return name
