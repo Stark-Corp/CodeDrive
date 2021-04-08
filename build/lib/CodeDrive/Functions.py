@@ -245,7 +245,7 @@ def threeNumComparison(a: float, b: float, c: float) -> list:
 
 def cryptograph(message: str = ..., mode: str = ['Encrypt', 'Decrypt', None]) -> AnyStr :
     """
-    This function `Encrypts` or `Decrypts` a `message` by specifying the `mode` to either decrypt or encrypt a user-given message.
+    This function `Encrypts` or `Decrypts` a `message` by specifying the `mode` to either decrypt or encrypt a user-given message. This returns the encrypted or decrypted message if bound to a variable
 
     Args:
     `message: str` : This should contain the `message` given by user.
@@ -253,7 +253,7 @@ def cryptograph(message: str = ..., mode: str = ['Encrypt', 'Decrypt', None]) ->
     `mode: str` : This should contain the `mode` in string(`str`) format. The displayed list is given for the preview of the available mode specification.
     """
     keys = """a@%$bc^de!f*g&(h,i"';:.-\| ~₹jkl/m5n6o1p9q7r2s8t0uvwxy3z+#*)=_`"""
-    values = keys[::-1]
+    values = keys[-1] + keys[0:-1]
     encryptionDict = dict(zip(keys, values))
     decryptionDict = dict(zip(values, keys))
 
