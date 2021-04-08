@@ -6,7 +6,7 @@ with open("README.md", "r") as rd:
     longDesc = rd.read()
 
 setup(name = "CodeDrive",
-    version = "1.6",
+    version = "1.7",
     author = "Stark-Corp (Himangshu De)",
     author_email = "dehimangshu2020@gmail.com",
     url = "https://github.com/Stark-Corp/CodeDrive",
